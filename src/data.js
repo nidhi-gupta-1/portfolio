@@ -1,36 +1,28 @@
 export const projects = [
   {
-    title: "React Reserve",
-    subtitle: "MERN Stack",
+    title: "Datepicker Plugin",
+    subtitle: "React, Es6, Html, css, Styled-components, Npm",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "A flexible and custom datepicker plugin that allows users to easily select dates from a calendar interface. This plugin provides a range of features and options to tailor the datepicker to your specific needs.",
     image:
       "https://s3-alpha.figma.com/hub/file/2718247115/30438230-ba72-4318-8cb5-6865767ef82e-cover.png",
-    link: "https://reactbootcamp.com",
+    link: "#",
   },
   {
-    title: "React Tracks",
-    subtitle: "React and Python",
+    title: "Calculator",
+    subtitle: "React, Es6, Npm",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "A simple yet powerful calculator built with React, designed to make calculations easy and efficient. This custom calculator app allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division, as well as more advanced calculations like exponentiation, roots, and trigonometric functions.",
     image: "./project-2.gif",
-    link: "https://reedbarger.com",
+    link: "#",
   },
   {
-    title: "DevChat",
-    subtitle: "React and Firebase",
+    title: "Healthcare Lab Tests",
+    subtitle: "React, Es6, TailwindCss, React-routing, Context, Localstorage, Github, netlify",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "Our responsive React app is designed to simplify the process of booking healthcare lab tests, making it convenient and hassle-free for patients. With a user-friendly interface and seamless navigation, you can easily search, select, and book your desired lab tests from the comfort of your own home.",
     image: "./project-3.gif",
-    link: "https://jsbootcamp.com",
-  },
-  {
-    title: "Epic Todo App",
-    subtitle: "React Hooks",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-4.gif",
-    link: "https://pythonbootcamp.com",
+    link: "http://healthcare-labtest.netlify.app",
   },
 ];
 

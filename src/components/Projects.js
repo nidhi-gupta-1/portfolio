@@ -12,9 +12,7 @@ export default function Projects() {
             Apps I've Built
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-            facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
-            fuga dolore.
+          I develop responsive and user-friendly web applications that provides reusability and scalability. These applications is built using list the technologies, frameworks, and programming languages used e.g., HTML, Css, JavaScript, React, React hooks, Node.js, TailwindCss, npm etc.
           </p>
         </div>
         <div className="flex flex-wrap -m-4">
