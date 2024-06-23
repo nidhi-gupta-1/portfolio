@@ -9,12 +9,10 @@ export default function About() {
             Hi, I'm Nidhi Gupta.
             <br className="hidden lg:inline-block" />
             <span className="sm:text-3xl text-2xl">I love to build amazing
-            apps.</span>
+              apps.</span>
           </h1>
           <p className="mb-8 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-            laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
-            Laborum, voluptas natus?
+            Highly skilled web developer with expertise in building scalable, responsive, and user-friendly websites, leveraging cutting-edge technologies to deliver innovative solutions that drive business growth and customer engagement.
           </p>
           <div className="flex justify-center">
             <a
