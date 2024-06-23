@@ -3,7 +3,7 @@ export const projects = [
     title: "Datepicker Plugin",
     subtitle: "React, Es6, Html, css, Styled-components, Npm",
     description:
-      "A flexible and custom datepicker plugin that allows users to easily select dates from a calendar interface. This plugin provides a range of features and options to tailor the datepicker to your specific needs.",
+      "A flexible and custom datepicker plugin that allows users to easily select dates from a calendar interface. This plugin provides a range of features and options to tailor the datepicker to your specific needs. Also no date related third party libraries like moment.js have been used in building this application.",
     image:
       "https://s3-alpha.figma.com/hub/file/2718247115/30438230-ba72-4318-8cb5-6865767ef82e-cover.png",
     link: "#",
