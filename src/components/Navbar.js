@@ -1,4 +1,4 @@
-import { ArrowRightIcon, ChartSquareBarIcon, ChatAltIcon, ChatIcon } from "@heroicons/react/solid";
+import { ChatAltIcon } from "@heroicons/react/solid";
 import React from "react";
 
 export default function Navbar() {
