@@ -8,7 +8,7 @@ export default function Contact() {
 
   const sendDataToGmail = (e) => {
     e.preventDefault();
-    sendEmail(name, email, message);
+    sendEmail(name, email, message, setName,setEmail,setMessage);
   };
 
   return (

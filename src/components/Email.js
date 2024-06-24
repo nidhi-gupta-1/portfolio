@@ -1,6 +1,6 @@
 import emailjs from 'emailjs-com';
 
-const sendEmail = (name, email, message) => {
+const sendEmail = (name, email, message, setName, setEmail, setMessage) => {
   const templateParams = {
     from_name: name,
     from_email: email,
@@ -14,6 +14,9 @@ const sendEmail = (name, email, message) => {
     'CD4iqIgirgaRHrcaR'
   ).then((response) => {
     alert('Email sent successfully!');
+    setName('');
+    setEmail('');
+    setMessage('');
   }).catch((error) => {
     alert('Error sending email');
     console.log(error)
