@@ -1,28 +1,15 @@
 import React from "react";
+import sendEmail from './Email';
 
 export default function Contact() {
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
 
-  function encode(data) {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  }
-
-  function handleSubmit(e) {
+  const sendDataToGmail = (e) => {
     e.preventDefault();
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", name, email, message }),
-    })
-      .then(() => alert("Message sent!"))
-      .catch((error) => alert(error));
-  }
+    sendEmail(name, email, message);
+  };
 
   return (
     <section id="contact" className="relative">
@@ -63,7 +50,7 @@ export default function Contact() {
         </div>
         <form
           name="contact"
-          onSubmit={handleSubmit}
+          onSubmit={sendDataToGmail}
           className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full">
           <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
             let's connect!
