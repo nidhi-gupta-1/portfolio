@@ -33,7 +33,7 @@ export default function About() {
             alt="hero"
             fetchpriority="high"
             width="640" 
-            height= "auto"
+            height="360"
             src={`${process.env.PUBLIC_URL}/webdeveloper.webp`}
           />
         </div>
