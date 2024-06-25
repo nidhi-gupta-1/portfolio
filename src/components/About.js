@@ -17,7 +17,7 @@ export default function About() {
           <div className="flex justify-center">
             <a
               href="#contact"
-              className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
+              className="inline-flex text-black font-semibold bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
               Work With Me
             </a>
             <a
@@ -29,9 +29,9 @@ export default function About() {
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <img
-            className="object-cover object-center rounded"
+            className="object-cover object-center rounded lg:max-w-sm sm:w-full md:w-5/6 w-5/6"
             alt="hero"
-            src="https://cdni.iconscout.com/illustration/premium/thumb/female-web-developer-working-on-project-5691620-4759502.png?f=webp"
+            src={`${process.env.PUBLIC_URL}/webdeveloper.webp`}
           />
         </div>
       </div>

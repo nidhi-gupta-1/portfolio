@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <header className="bg-gray-800 md:sticky top-0 z-10">
       <div className="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center">
-        <div href='' className="title-font font-medium text-white mb-4 md:mb-0">
+        <div className="title-font font-medium text-white mb-4 md:mb-0">
           <a href="#about" className="ml-3 text-xl">
             Nidhi Gupta
           </a>
@@ -20,8 +20,10 @@ export default function Navbar() {
         </nav>
         <a
           href="#contact"
-          className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
-            <ChatAltIcon className="w-8 h-8 ml-1 text-green-300"/>
+          className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"
+          >
+            Connect
+            <ChatAltIcon className="w-8 h-8 ml-1 text-green-300" />
         </a>
       </div>
     </header>

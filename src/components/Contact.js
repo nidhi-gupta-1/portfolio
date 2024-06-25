@@ -23,6 +23,7 @@ export default function Contact() {
             className="absolute inset-0"
             style={{ filter: "opacity(0.7)" }}
             src="https://www.google.com/maps/embed/v1/place?q=haryana&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+            sandbox="allow-scripts allow-same-origin"
           />
           <div className="bg-gray-900 relative flex flex-wrap py-2 rounded shadow-md">
             <div className="lg:w-1/2 m-3">
@@ -50,6 +51,7 @@ export default function Contact() {
         </div>
         <form
           name="contact"
+          autoComplete="off"
           onSubmit={sendDataToGmail}
           className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full">
           <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
@@ -97,7 +99,7 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+            className="text-black font-semibold bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
             Submit
           </button>
         </form>
