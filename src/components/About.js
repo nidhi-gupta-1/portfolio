@@ -31,6 +31,9 @@ export default function About() {
           <img
             className="object-cover object-center rounded lg:max-w-sm sm:w-full md:w-5/6 w-5/6"
             alt="hero"
+            fetchpriority="high"
+            width="640" 
+            height="360"
             src={`${process.env.PUBLIC_URL}/webdeveloper.webp`}
           />
         </div>
