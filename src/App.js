@@ -9,19 +9,19 @@ export default function App() {
   const [theme, setTheme] = React.useState(JSON.parse(sessionStorage.getItem('theme')))
 
   React.useEffect(() => {
-    if(theme !== null){
+    if (theme !== null) {
       const root = window.document.documentElement;
       root.classList.remove(theme === 'dark' ? 'light' : 'dark');
       root.classList.add(theme);
     } else {
       setTheme('dark')
-      sessionStorage.setItem('theme',JSON.stringify('dark'))
-    } 
-}, [theme, setTheme]);
+      sessionStorage.setItem('theme', JSON.stringify('dark'))
+    }
+  }, [theme, setTheme]);
 
   return (
     <main className="dark:text-gray-400 dark:bg-gray-900 body-font">
-      <Navbar {...{theme, setTheme}}/>
+      <Navbar {...{ theme, setTheme }} />
       <About />
       <Suspense fallback={<p>{"...Loading"}</p>}>
         <Projects />

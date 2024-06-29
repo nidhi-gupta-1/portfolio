@@ -1,11 +1,11 @@
 import { ChatAltIcon, MoonIcon, SunIcon } from "@heroicons/react/solid";
 import React from "react";
 
-export default function Navbar({theme, setTheme}) {
+export default function Navbar({ theme, setTheme }) {
 
   const handleTheme = () => {
     const newTheme = theme === 'dark' ? 'light' : 'dark';
-    sessionStorage.setItem('theme',JSON.stringify(newTheme))
+    sessionStorage.setItem('theme', JSON.stringify(newTheme))
     setTheme(newTheme);
   }
 
@@ -28,15 +28,15 @@ export default function Navbar({theme, setTheme}) {
         <a
           href="#contact"
           className="inline-flex items-center dark:bg-gray-800 border-0 py-1 px-3 focus:outline-none dark:hover:bg-gray-700 hover:bg-gray-200 rounded text-lg mt-4 md:mt-0"
-          >
-            Connect
-            <ChatAltIcon className="w-8 h-8 ml-1 text-green-300" />
+        >
+          Connect
+          <ChatAltIcon className="w-8 h-8 ml-1 text-green-300" />
         </a>
         <div
           className="inline-flex items-center dark:bg-gray-800 border-0 py-1 px-3 cursor-pointer dark:hover:bg-gray-700 hover:bg-gray-200 rounded mt-4 md:mt-0"
           onClick={handleTheme}
-          >
-            {theme === 'dark' ? <MoonIcon className="w-8 h-8 ml-1 text-white"/> : <SunIcon className="w-8 h-8 ml-1 text-yellow-300" />}
+        >
+          {theme === 'dark' ? <MoonIcon className="w-8 h-8 ml-1 text-white" /> : <SunIcon className="w-8 h-8 ml-1 text-yellow-300" />}
         </div>
       </div>
     </header>

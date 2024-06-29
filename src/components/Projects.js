@@ -25,8 +25,8 @@ export default function Projects() {
               className="sm:w-1/2 w-100 p-4">
               <div className="flex relative h-full">
                 <img
-                width= "800"
-                height= "600"
+                  width="800"
+                  height="600"
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
                   src={project.image}

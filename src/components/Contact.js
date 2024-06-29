@@ -5,7 +5,7 @@ export default function Contact() {
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
-  
+
   const sendDataToGmail = (e) => {
     e.preventDefault();
     sendEmail(name, email, message);
