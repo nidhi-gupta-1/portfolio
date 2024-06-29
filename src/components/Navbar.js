@@ -18,10 +18,10 @@ export default function Navbar({theme, setTheme}) {
           </a>
         </div>
         <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
-          <a href="#projects" className="mr-5 px-2 dark:hover:bg-gray-700 hover:bg-gray-200 rounded">
+          <a href="#projects" className="px-2 dark:hover:bg-gray-700 hover:bg-gray-200 rounded">
             Past Work
           </a>
-          <a href="#skills" className="mr-5 px-2 dark:hover:bg-gray-700 hover:bg-gray-200 rounded">
+          <a href="#skills" className="px-2 dark:hover:bg-gray-700 hover:bg-gray-200 rounded">
             Skills
           </a>
         </nav>
