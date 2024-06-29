@@ -23,11 +23,10 @@ export default function Contact() {
             className="absolute inset-0"
             style={{ filter: "opacity(0.7)" }}
             src="https://www.google.com/maps/embed/v1/place?q=haryana&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-            sandbox="allow-scripts allow-same-origin"
           />
-          <div className="bg-gray-900 relative flex flex-wrap py-2 rounded shadow-md">
+          <div className="dark:bg-gray-900 bg-gray-200 relative flex flex-wrap py-2 rounded shadow-md">
             <div className="lg:w-1/2 m-3">
-              <h2 className="title-font font-semibold text-white tracking-widest text-xs">
+              <h2 className="title-font font-semibold dark:text-white tracking-widest text-xs">
                 ADDRESS
               </h2>
               <p className="mt-1">
@@ -36,13 +35,13 @@ export default function Contact() {
               </p>
             </div>
             <div className="lg:w-1/2 m-3 mt-4 lg:mt-0">
-              <h2 className="title-font font-semibold text-white tracking-widest text-xs">
+              <h2 className="title-font font-semibold dark:text-white tracking-widest text-xs">
                 EMAIL
               </h2>
               <h2 className="text-indigo-400 leading-relaxed">
                 work.nidhigupta@gmail.com
               </h2>
-              <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
+              <h2 className="title-font font-semibold dark:text-white tracking-widest text-xs mt-4">
                 PHONE
               </h2>
               <p className="leading-relaxed">+9179-XXXX-XXXX</p>
@@ -54,14 +53,14 @@ export default function Contact() {
           autoComplete="off"
           onSubmit={sendDataToGmail}
           className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full">
-          <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
+          <h2 className="dark:text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
             let's connect!
           </h2>
           <p className="leading-relaxed mb-3">
             I'm excited to get to know you better and will respond to your message at earliest.
           </p>
           <div className="relative mb-4">
-            <label htmlFor="name" className="leading-7 text-sm text-gray-400">
+            <label htmlFor="name" className="leading-7 text-sm dark:text-gray-400">
               Name
             </label>
             <input
@@ -69,11 +68,11 @@ export default function Contact() {
               id="name"
               name="name"
               onChange={(e) => setName(e.target.value)}
-              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full dark:bg-gray-800 bg-gray-200 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none dark:text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <div className="relative mb-4">
-            <label htmlFor="email" className="leading-7 text-sm text-gray-400">
+            <label htmlFor="email" className="leading-7 text-sm dark:text-gray-400">
               Email
             </label>
             <input
@@ -81,20 +80,20 @@ export default function Contact() {
               id="email"
               name="email"
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full dark:bg-gray-800 bg-gray-200 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none dark:text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             />
           </div>
           <div className="relative mb-4">
             <label
               htmlFor="message"
-              className="leading-7 text-sm text-gray-400">
+              className="leading-7 text-sm dark:text-gray-400">
               Message
             </label>
             <textarea
               id="message"
               name="message"
               onChange={(e) => setMessage(e.target.value)}
-              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              className="w-full dark:bg-gray-800 bg-gray-200 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none dark:text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
             />
           </div>
           <button
