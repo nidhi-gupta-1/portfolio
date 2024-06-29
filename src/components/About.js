@@ -27,7 +27,7 @@ export default function About() {
             <span className="sm:text-3xl text-2xl">I love to build amazing
               apps.</span>
           </h1>
-          <p className="mb-8 leading-relaxed w-10/12">
+          <p className="mb-8 leading-relaxed w-full">
             Highly skilled web developer with expertise in building scalable, responsive, and user-friendly websites, leveraging cutting-edge technologies to deliver innovative solutions that drive business growth and customer engagement.
           </p>
           <div className="flex justify-center">
@@ -45,7 +45,7 @@ export default function About() {
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <img
-            className="object-cover object-center rounded lg:max-w-sm sm:w-full md:w-5/6 w-5/6"
+            className="object-cover object-center rounded lg:max-w-lg lg:w-full md:w-5/6 w-5/6"
             alt="hero"
             fetchpriority="high"
             width="640"
