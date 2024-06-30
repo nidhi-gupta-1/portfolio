@@ -1,10 +1,15 @@
 import React from "react";
 import sendEmail from './Email';
+import RevealOnScroll from "./RevealOnScroll";
 
 export default function Contact() {
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
+  const ref1 = React.useRef();
+  const isVisible1 = RevealOnScroll(ref1);
+  // const ref2 = React.useRef();
+  // const isVisible2 = RevealOnScroll(ref2);
 
   const sendDataToGmail = (e) => {
     e.preventDefault();
@@ -52,7 +57,9 @@ export default function Contact() {
           name="contact"
           autoComplete="off"
           onSubmit={sendDataToGmail}
-          className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full">
+          ref={ref1} 
+          className={`lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full transition-opacity ease-in duration-700 ${isVisible1 ? "opacity-100" : "opacity-0"}`}
+          >
           <h2 className="dark:text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
             let's connect!
           </h2>

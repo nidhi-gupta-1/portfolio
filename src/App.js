@@ -6,7 +6,7 @@ const Projects = React.lazy(() => import("./components/Projects"));
 const Skills = React.lazy(() => import("./components/Skills"));
 
 export default function App() {
-  const [theme, setTheme] = React.useState(JSON.parse(sessionStorage.getItem('theme')))
+  const [theme, setTheme] = React.useState(JSON.parse(sessionStorage.getItem('theme')));
 
   React.useEffect(() => {
     if (theme !== null) {
