@@ -1,18 +1,13 @@
 import { CodeIcon } from "@heroicons/react/solid";
 import React from "react";
 import { projects } from "../data";
-import RevealOnScroll from "./RevealOnScroll";
 
 export default function Projects() {
-  const ref1 = React.useRef();
-  const isVisible1 = RevealOnScroll(ref1);
-  const ref2 = React.useRef();
-  const isVisible2 = RevealOnScroll(ref2);
 
   return (
     <section id="projects" className="dark:bg-gray-900 body-font">
       <div className="container px-5 py-16 mx-auto text-center lg:px-40">
-        <div ref={ref1} className={`flex flex-col w-full mb-5 transition-opacity ease-in duration-500 ${isVisible1 ? "opacity-100" : "opacity-0"}`}>
+        <div className="flex flex-col w-full mb-5">
           <CodeIcon className="mx-auto inline-block w-10 mb-4" />
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 dark:text-white">
             Apps I've Built
@@ -28,9 +23,7 @@ export default function Projects() {
               target="_blank"
               rel="noreferrer"
               key={project.image}
-              ref={ref2} 
-              className={`sm:w-1/2 w-100 p-4 transition-opacity ease-in duration-700 ${isVisible2 ? "opacity-100" : "opacity-0"}`}
-              >
+              className="sm:w-1/2 w-100 p-4">
               <div className="flex relative h-full">
                 <img
                   width="800"
